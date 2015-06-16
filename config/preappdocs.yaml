@@ -1,0 +1,62 @@
+# config for preappdocs
+
+reportName: preappdocs
+reportDescription: Undergraduate files with no existing application
+unzipPath: Y:\DI_###ENV_U3###_INBOUND\1_unzip
+csvFileName: di_databank_preapp-files.csv
+errorPath: Y:\DI_###ENV_U3###_INBOUND\error
+addToQueue: Import Complete
+
+alertEmails:
+  - user@umass.edu
+  - user2@umass.edu
+
+staticValues:
+  - name: Drawer
+    type: IDX
+    value: UMBUA
+  - name: Document App Plan
+    type: CP
+    value: UMBUA_Import.js - PreApp
+
+csvValues:
+  - name: filename
+    type: path
+  - name: drawer
+    type: none
+  - name: folder
+    type: index
+  - name: tab
+    type: index
+  - name: f3
+    type: index
+  - name: f4
+    type: index
+  - name: f5
+    type: index
+  - name: docTypeName
+    type: index
+  - name: SA Application Nbr
+    type: CP
+  - name: Document App Plan
+    type: none
+  - name: CEEB
+    type: CP
+  - name: SA Org ID
+    type: CP
+  - name: Recommender Name
+    type: CP
+  - name: Needs Data Entry
+    type: CP
+  - name: Checklist Update
+    type: CP
+  - name: Source
+    type: CP
+  - name: tmp_preapp-Emplid
+    type: CP
+  - name: tmp_preapp-fname
+    type: CP
+  - name: tmp_preapp-lname
+    type: CP
+  - name: tmp_preapp-mname
+    type: CP
